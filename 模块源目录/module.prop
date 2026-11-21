@@ -1,0 +1,6 @@
+id=uv2800
+name=一加13解容
+version=12
+versionCode=35
+author=枫落1911
+description=【卸载提醒】请先确保电量高于 30%，手动打开 WebUI 点击「恢复原厂」，确认成功后再回 KernelSU 卸载。关机截止电压自定义（2800~3060mV，默认2800）；关机 votable 锁定为 V_s，电量计学习终止电压按 V_s 自动派生并写入 ADSP；显示真实电量、禁止1%强制进入超级省电（两项可在 WebUI 独立开关，默认开启）。

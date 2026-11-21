@@ -1,0 +1,15 @@
+#!/system/bin/sh
+# 模块安装脚本（由 KernelSU 在刷入时执行）
+
+if [ "$KSU_LATE_LOAD" != "1" ]; then
+    ui_print "- 标准模式：开机自动加载"
+    return 0 2>/dev/null || exit 0
+fi
+
+ui_print "**********************************************"
+ui_print "  检测到越狱(late-load)模式"
+ui_print "  模块将自动捕获电量计设备指针"
+ui_print "  关机电压由 hook 即时强制"
+ui_print "**********************************************"
+
+return 0 2>/dev/null || exit 0
